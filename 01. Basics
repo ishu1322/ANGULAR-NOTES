@@ -1,0 +1,18 @@
+Create new app: ng new app-name
+Create component: ng g c comp-name
+
+---------------------DATA BINDING-------------------
+
+Data binding is communication between TS code (Business Logic) and Template (HTML)
+
+1. String Interpolation {{  }}  (TS to HTML):
+  html {{ var-name or method() }} 
+  TS var-name="abc";
+
+2. Property Binding:
+  dynamically change DOM objects, for ex: [disabled]="!allowFromTS"
+
+3. Event Binding:
+  if we want to bind an event to a property in html meaning on click of a button trigger a method. Ex: HTML (click)="onCreateServer()"
+
+$event browse
