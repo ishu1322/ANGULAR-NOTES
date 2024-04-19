@@ -1,6 +1,14 @@
 Create new app: ng new app-name
 Create component: ng g c comp-name
 
+selector:"app-name"
+templateURL: "path for html"
+styleURL:"path for css"
+
+app: it is root component
+
+app.module.ts: to add imports like FormsModule
+
 ---------------------DATA BINDING-------------------
 
 Data binding is communication between TS code (Business Logic) and Template (HTML)
@@ -16,3 +24,39 @@ Data binding is communication between TS code (Business Logic) and Template (HTM
   if we want to bind an event to a property in html meaning on click of a button trigger a method. Ex: HTML (click)="onCreateServer()"
 
 $event browse
+
+4. Two- Binding: html [(ngModel)]="var-name"
+
+
+------------------------ DIRECTIVES ---------------------------
+
+Directives are Instructions in the DOM
+
+Components:	Used with a template. This type of directive is the most common directive type.
+
+Attribute directives	: Change the appearance or behavior of an element, component, or another directive.
+
+Structural directives :	Change the DOM layout by adding and removing DOM elements.
+
+
+<p *ngIf="true or false"> Content </p>
+* is for structural directives
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
