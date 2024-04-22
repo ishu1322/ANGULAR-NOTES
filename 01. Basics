@@ -42,6 +42,22 @@ Structural directives :	Change the DOM layout by adding and removing DOM element
 <p *ngIf="true or false"> Content </p>
 * is for structural directives
  
+[ngStyle]="{'color':getColor()}" : dynamically styling elements
+
+[ngClass]="{'online':'serverStatus===online'}" : dynamically apply css class to the elements.
+In this above example css class 'online' will only be applied to the element when serverStatus is online from TS.
+CSS: 
+.online{
+    background-color: lightgreen;
+}
+
+
+*ngFor="let server of servers" 
+-- where servers is a array of servers
+
+*ngFor="let click of allClicks; let i = index"  
+-- we can also initiate index
+
 
 
 
